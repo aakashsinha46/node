@@ -1,0 +1,25 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2luaGEiLCJpYXQiOjE2MzAyMzExNTcsImV4cCI6MTYzMDIzMTE3Mn0.VMwBXA8NDuv5cqTZmR9IvC79f-iQnqYWDE1alcDN-TY
+
+###
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2luaGEiLCJpYXQiOjE2MzAyMzI0NTZ9.Ue8I0Zvy9uwMMmwtWdsNWOUfBDATTSKkWi-2S6ECj4g"
+}
+
+###
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2luaGEiLCJpYXQiOjE2MzAyMzIzNzJ9.Bh6mpcz_tqz4Ps5SM3pjGisYn7qXkqJ8MuP53NbvlHY"
+}
+
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username":"sinha"
+}
